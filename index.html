@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione settimana 1 giorno 2</title>
+    <style>
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 5px;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="intestazione">
+        <h1>Codici per la lezione <span>settimana 1 giorno 2</span></h1>
+        <nav>
+            <a href="https://www.html.it">HTML.IT</a> | <a href="https://developer.mozilla.org">MDN</a> | <a
+                href="https://www.github.com">GITHUB</a>
+        </nav>
+    </header>
+
+    </header>
+
+    <main id="content">
+
+        <section id="table">
+            <h2>TABELLE</h2>
+            <div id="tableContent">
+                <p>In questo blocco vedremo la costruzione di una tabella.</p>
+                <p>La tabella semplice è attualmente la più utilizzata per piccoli elenchi, liste...</p>
+            </div>
+            <table>
+                <caption>Registro presenze</caption>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Anno</th>
+                        <th>Presenze</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Luca</td>
+                        <td>2021</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Giovanna</td>
+                        <td>2021</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>Anna</td>
+                        <td>2021</td>
+                        <td>22</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td colspan="2">Totale studenti</td>
+                    <td>3</td>
+                </tfoot>
+
+            </table>
+
+        </section>
+
+        <hr />
+
+        <section id="form">
+
+            <h2>FORM</h2>
+
+            <form method="get" action="answer.html" autocomplete="off">
+                <fieldset>
+                    <legend>Form di registrazione</legend>
+                    <label for="name">NOME</label>
+                    <input type="text" name="name" id="name" placeholder="Inserisci il tuo nome" />
+                    <label for="surname">COGNOME</label>
+                    <input type="text" name="surname" id="surname" placeholder="Inserisci il tuo cognome" required />
+                    <br /><br />
+                    <label for="email">EMAIL</label>
+                    <input type="text" name="email" id="email" placeholder="Inserisci una email valida" required />
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" placeholder="Scegli una password"
+                        maxlength="20" minlength="8" />
+                    <label for="cellphone">TELEFONO</label>
+                    <input type="tel" id="cellphone" name="cellphone" placeholder="Inserisci il numero di cellulare" />
+                    <br /><br />
+                    <label for="message">INSERISCI UN MESSAGGIO</label>
+                    <textarea id="message" name="message" placeholder="Inserisci il tuo messaggio" rows="5"
+                        cols="90"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Preferenze</legend>
+                    <p>Materie scelte</p>
+
+                    <input type="checkbox" id="HTML" name="HTML" />
+                    <label for="HTML">HTML</label><br />
+                    <input type="checkbox" id="CSS" name="CSS" />
+                    <label for="CSS">CSS</label><br />
+                    <input type="checkbox" id="javascript" name="javascript" />
+                    <label for="javascript">JavaScript</label><br />
+                    <input type="checkbox" id="react" name="react" />
+                    <label for="react">React</label><br />
+                    <input type="checkbox" id="angular" name="angular" />
+                    <label for="angular">Angular</label><br />
+
+                    <p>Tipo di frequenza</p>
+                    <input type="radio" id="part" name="frequency" value="part" />
+                    <label for="part">Part-Time</label><br />
+                    <input type="radio" id="full" name="frequency" value="full" />
+                    <label for="full">Full-Time</label><br />
+                    <input type="radio" id="serale" name="frequency" value="serale" />
+                    <label for="serale">Serale</label><br />
+
+                    <br /><br />
+                    <label for="title">Titolo di studio</label><br />
+                    <select id="title" name="title">
+                        <option value="" selected></option>
+                        <option value="diploma">Diploma superiore</option>
+                        <option value="laureatri">Laurea triennale</option>
+                        <option value="laureamag">Laurea magistrale</option>
+                        <option value="laureaold">Laurea vecchio ordinamento</option>
+                    </select>
+                </fieldset>
+                <button type="submit" id="send">INVIA</button>
+                <button type="reset" id="clear">CANCELLA</button>
+            </form>
+
+        </section>
+
+        <br /><br />
+
+    </main>
+
+    <aside id="secondary">
+
+        <article id="iframe">
+            <iframe src="https://www.repubblica.it" width="500" height="500"></iframe>
+        </article>
+
+        <br /><br />
+
+        <article id="youtube">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KuGrV0ADzOQ?si=00O3A9-yYx37ILu_"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </article>
+
+    </aside>
+
+    <hr />
+
+    <footer id="footer">
+        <address>
+            AZIENDA XYZ<br />
+            Via Roma 20<br />
+            00100 Roma<br />
+        </address>
+        <div id="informative">
+            <a href="javascript:void(0)">Privacy Policy</a> | <a href="javascript:void(0)">Informativa Cookie</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
